@@ -1,0 +1,48 @@
+#include <iostream>
+#include <chrono>
+#include <thread>
+using namespace std;
+
+//분 단위로 카운트다운
+void countdown(int seconds) {
+	int min = seconds / 60;
+	while (min > 0) {
+		cout << "남은 시간:" << min << "분 \n"<<endl;
+		cout.flush();
+		this_thread::sleep_for(chrono::minutes(1));
+		min--;
+	}
+	cout << endl;
+}
+
+void pororo(void) {
+	int focus = 25 * 60; //공부할 시간(분) * 60
+	int breakTime = 5 * 60; //휴식할 시간(분) * 60
+
+	cout << "공.부.조.아" << endl;
+	countdown(focus);
+	system("powershell -Command \"Import-Module BurntToast; New-BurntToastNotification -Text 'Focus On', '공.부.조.아 ☕'\"");
+	//공부 하는 시간
+
+
+
+	cout << "휴.식.조.아" << endl;
+	countdown(breakTime);
+	system("powershell -Command \"Import-Module BurntToast; New-BurntToastNotification -Text 'Focus Done', '휴.식.조.아 '\"");
+	//휴식한 시간
+
+}
+
+int main(void) {
+
+
+
+	for (int i = 0; i < 3; i++) {
+		pororo();
+		cout << "뽀모도르" <<(i+1)<< " 회 끝!" << endl;
+	}
+
+	system("powershell -Command \"Import-Module BurntToast; New-BurntToastNotification -Text '퉁퉁퉁퉁퉁퉁퉁퉁퉁 사후르가 좋아합니다.', '3회 반복 완료'\"");
+	return 0;
+
+}
