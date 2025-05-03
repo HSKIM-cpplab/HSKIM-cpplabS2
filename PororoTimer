@@ -35,6 +35,8 @@ void pororo(void) {
 
 int main(void) {
 
+	system("powershell -Command \"Import-Module BurntToast; New-BurntToastNotification -Text '뽀모도르 타이머 시작', '3회 반복합니다.'\"");
+
 
 
 	for (int i = 0; i < 3; i++) {
