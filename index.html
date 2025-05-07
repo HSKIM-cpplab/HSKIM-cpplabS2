@@ -1,20 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>HSKIM Portfolio</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Arial', sans-serif;
       max-width: 900px;
       margin: 0 auto;
       padding: 0;
-      background-color: #fffafa; /* 스노우 배경 */
+      background-color: #fffafa;
       color: #333;
+      line-height: 1.6;
     }
     header {
-      background-color: #ffa4b3; /* 핑크 상단바 */
+      background-color: #ffa4b3;
       padding: 20px;
       text-align: center;
       position: sticky;
@@ -24,6 +25,7 @@
     header h1 {
       margin: 0;
       color: #fff;
+      font-size: 25px;
     }
     nav {
       margin-top: 10px;
@@ -39,7 +41,7 @@
       border-bottom: 1px solid #ddd;
     }
     h2 {
-      color: #c71585; /* 진한 핑크 */
+      color: #c71585;
     }
     .tag {
       background: #ffc0cb;
@@ -47,6 +49,9 @@
       padding: 2px 6px;
       font-size: 0.9em;
       margin-right: 8px;
+    }
+    .project-list li {
+      margin-bottom: 8px;
     }
     footer {
       text-align: center;
@@ -58,7 +63,7 @@
 </head>
 <body>
   <header>
-    <h1> 김현수수학학원-cpplab</h1>
+    <h1>김현수수학학원-cpplab</h1>
     <nav>
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
@@ -68,67 +73,54 @@
   </header>
 
   <section id="about" style="display: flex; align-items: center; gap: 20px;">
-  <img src="sahoor.png.webp" alt="퉁퉁퉁 사후르" width="200" style="border-radius: 10px; box-shadow: 2px 2px 8px #ccc;">
-  <div>
-    <h2>🎓 Background</h2>
-    <p><strong> 휴먼지능정보공학 주전공 & 산업공학 복수전공.</strong><br>
-  트랄랄레로 트랄랄라, 봄바르디로 크로코딜로, 리릴리 라릴라 같은 적들이 주변에 가득한 상황에서도 <br>
-      언제나 웃음을 잃지 않는 퉁 퉁 퉁 퉁 퉁 퉁 퉁 퉁 퉁 사후르처럼 언제나 긍정적인 태도로 임하는 PM 김현수 입니다! <br>
-     </p>
-  </div>
-</section>
-
-  
-
-  <section id="skillss">
-    <h2> S2 skills</h2>
-    <p>  
-      - C/C++ 코드 작성 수준 실무 사용 가능<br>
-      - VHDL 코드 작성 수준 실무 사용 가능<br>
-      - Excel 실무 사용 가능/ LP, 데이터 분석<br>
-      - Notion 실무 사용 가능<br>
-- CAD 실무 사용 가능<br>
-- python 코드 수정 수준 실무 사용 가능<br>
-- JAVA 코드 수정 수준 실무 사용 가능 <br>
-- WireShark 네트워크 패킷 분석 가능<br>
-
-- "감정이 상하지 않는" 의견 조율<br>
--"밸런스 게임"을 통한 아이스 브레이킹<br>
-    </p>
+    <img src="sahoor.png.webp" alt="퉁퉁퉁 사후르" width="200" style="border-radius: 10px; box-shadow: 2px 2px 8px #ccc;">
+    <div>
+      <h2>🎓 About Me</h2>
+      <p><strong>휴먼지능정보공학 주전공 & 산업공학 복수전공</strong><br>
+      트랄랄레로 트랄랄라, 봄바르디로 크로코딜로, 리릴리 라릴라 같은 적들이 주변에 <br>
+        가득한 상황에서도 언제나 웃음을 잃지 않는 퉁 퉁 퉁 퉁 퉁 퉁 퉁 퉁 퉁 사후르처럼 <br>
+        언제나 긍정적인 태도로 임하는 PM 김현수 입니다!
+      </p>
+    </div>
   </section>
 
+  <section id="skills">
+    <h2>⚙️ Skills</h2>
+    <ul>
+      <li>C/C++, VHDL 실무 상용 가능</li>
+      <li>Excel LP, 데이터 분석 가능</li>
+      <li>Notion, CAD, Wireshark 사용 가능</li>
+      <li>Python, Java 코드 수정 가능</li>
+      <li>갈등 조율 및 회의 주도 능력</li>
+      <li>밸런스 게임으로 아이스브레이킹 가능</li>
+    </ul>
+  </section>
 
   <section id="projects">
-    <h2>🚀 Projects</h2>
-    <p>  [사고와 표현] 구글 비동의 쿠키 수집 발표] <br>
-          [네이버 개인정보 열람 청구 및 분석]<br>
-      [ COSS 바이오헬스 스타트업 경진 대회 우수상] <br>
-      [화장품 샘플 공유 플랫폼]<br>
-
-[개인정보 보호 인스타그램 신기능]	<br>
-
-[소상공인을 위한 배달수수료 최소화 플렛폼]	<br>
-
-[[[소프트웨어공학] 날씨 기반 코디 조합 모듈]	<br>
-[[국내 특허] 동영상의 특정 조건 부분을 충족하는 부분을 식별하여 지정 속도로 변환해주는 동영상 재생 방법]	<br>
-
-[팀프로젝트 조장 다수]<br>
-      [교내 중앙 동물권 동아리 상냥행 기획부]	<br>
-         [2024 동아리 홍보 부스] 동물권 중앙 동아리 상냥행 홍보<br>
-[휴니티 기획부 부장]<br>
-[2025 휴먼지능정보공학과 전공 박람회 진행]<br>
-    </p>
+    <h2>🚀 주요 프로젝트</h2>
+    <ul class="project-list">
+      <li><a href="https://your-link.com/project1">[COSS 경진대회] 바이오헬스 스타트업 - 우수상 수상</a></li>
+      <li><a href="https://your-link.com/project2">[특허 등록] 영상 조건 구간만 속도 조절하는 재생 방법</a></li>
+      <li><a href="https://your-link.com/project3">날씨 기반 옷 코디 추천 모듈 개발(진행중)</a></li>
+      <li><a href="https://your-link.com/project4"> 화장품 샘플 공유 플랫폼 기획</a></li>
+      <li><a href="https://your-link.com/project5"> 인스타그램 개인정보 보호 신기능 제안서</a></li>
+      <li><a href="https://your-link.com/project6">네이버 개인정보 청구 및 분석 보고서</a></li>
+      <li><a href="https://your-link.com/project6">[소상공인을 위한 배달수수료 최소화 플렛폼]</a></li>
+      <li><a href="https://your-link.com/project6">[사고와 표현] 구글 비동의 쿠키 수집 발표]</a></li>
+      <li>[휴먼지능정보공학과 학생회 휴니티 기획부 부장, 전공 박람회 운영]</li>
+      <li>[교내 중앙 동물권 동아리 상냥행 기획부 활동, 동아리 홍보 부스 운영]</li>
+      <li>[기타 팀 프로젝트 조장 및 주도적인 역할 다수]</li>
+    </ul>
   </section>
 
-<section id="contact">
-  <h2>📫 Contact</h2>
-  <p>
-    Email: <a href="mailto:kimhs03221@gmail.com">kimhs03221@gmail.com</a><br>
-    GitHub: <a href="https://github.com/HSKIM-cpplab">github.com/HSKIM-cpplab</a><br>
-    
-  </p>
-</section>
-
+  <section id="contact">
+    <h2>📫 Contact</h2>
+    <p>
+      Email: <a href="mailto:kimhs03221@gmail.com">kimhs03221@gmail.com</a><br>
+      GitHub: <a href="https://github.com/HSKIM-cpplab">github.com/HSKIM-cpplab</a><br>
+      Instagram: <a href="https://instagram.com/your_id" target="_blank">@hye0nsu221</a><br>
+    </p>
+  </section>
 
   <footer>
     &copy; 2025 HSKIM. All rights reserved.
